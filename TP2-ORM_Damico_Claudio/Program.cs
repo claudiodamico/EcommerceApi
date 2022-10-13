@@ -26,6 +26,8 @@ builder.Services.AddTransient<IProductoService, ProductoService>();
 builder.Services.AddTransient<IValidations, Validations>();
 builder.Services.AddTransient<ICarritoRepository, CarritoRepository>();
 builder.Services.AddTransient<ICarritoService, CarritoService>();
+builder.Services.AddTransient<IOrdenRepository, OrdenRepository>();
+builder.Services.AddTransient<IOrdenService, OrdenService>();
 //Cors
 builder.Services.AddCors(c =>
 {

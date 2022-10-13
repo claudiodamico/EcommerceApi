@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TP1_ORM_Application.Services;
 using TP1_ORM_Domain.Dtos;
+using TP1_ORM_Domain.Entities;
 
 namespace TP2_ORM_Damico_Claudio.Controllers
 {
@@ -23,7 +24,7 @@ namespace TP2_ORM_Damico_Claudio.Controllers
         /// <summary>
         /// Agregar productos al carrito
         /// </summary>
-        [HttpPost]
+        [HttpPut]
         [ProducesResponseType(typeof(ClienteDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult AddProductoCarrito(CarritoDto carritoDto)
@@ -41,19 +42,30 @@ namespace TP2_ORM_Damico_Claudio.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType(typeof(ClienteDto), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult RegistrarVenta()
+        public IActionResult ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id)
         {
+            try
             {
-                try
-                {
-                    return new JsonResult(_carritoService.RegistrarVenta()) { StatusCode = 200 };
-                }
-                catch (Exception)
-                {
-                    return StatusCode(500, "Internal Server Error");
-                }
+                return new JsonResult(_carritoService.ModifyCarrito(modifyCarritoDto, Id)) { StatusCode = 200 };
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteProductoCarrito(string codigo)
+        {
+            try
+            {
+                _carritoService.DeleteProductoCarrito(codigo);
+
+                return StatusCode(200, "Producto eliminado correctamente");
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
             }
         }
     } 

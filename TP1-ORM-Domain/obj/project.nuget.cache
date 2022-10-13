@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kIH61NX3G2wf9M7JymxssKnyqVdx2QIiSxfp0PcI0DCNEAflZbxPlywPbmpe9GXM9H6hS5CcBnVCt2Fyxolzcg==",
+  "dgSpecHash": "5gsaFv1i8B+segD8NW5V7Mc812S7I49z3LspwvzRjGe2lNe8Jn5SFl9CK/9w8hU3gbL3nGVye9YGj0yHtSQkyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj",
+  "projectFilePath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\casto\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\casto\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

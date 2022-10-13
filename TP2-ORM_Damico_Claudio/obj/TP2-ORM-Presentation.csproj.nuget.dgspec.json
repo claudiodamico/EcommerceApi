@@ -4,12 +4,12 @@
     "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM-Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-ORM-AccessData.csproj": {
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-ORM-AccessData.csproj",
-        "projectName": "TP1-ORM-AccessData",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-ORM-AccessData.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj",
+        "projectName": "TP1-REST-AccessData",
+        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj",
         "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\obj\\",
         "projectStyle": "PackageReference",
@@ -34,11 +34,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj"
               },
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj"
               }
             }
           }
@@ -98,12 +98,12 @@
         }
       }
     },
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj": {
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj",
-        "projectName": "TP1-ORM-Application",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj",
+        "projectName": "TP1-REST-Application",
+        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj",
         "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\obj\\",
         "projectStyle": "PackageReference",
@@ -128,8 +128,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj"
               }
             }
           }
@@ -189,12 +189,12 @@
         }
       }
     },
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj": {
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj",
-        "projectName": "TP1-ORM-Domain",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
+        "projectName": "TP1-REST-Domain",
+        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
         "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -306,11 +306,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-ORM-AccessData.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-ORM-AccessData.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj"
               },
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj"
               }
             }
           }

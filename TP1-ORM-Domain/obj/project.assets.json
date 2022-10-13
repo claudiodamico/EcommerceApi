@@ -2081,9 +2081,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj",
-      "projectName": "TP1-ORM-Domain",
-      "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-ORM-Domain.csproj",
+      "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
+      "projectName": "TP1-REST-Domain",
+      "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
       "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\obj\\",
       "projectStyle": "PackageReference",

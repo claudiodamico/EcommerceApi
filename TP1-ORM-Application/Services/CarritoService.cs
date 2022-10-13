@@ -10,8 +10,9 @@ namespace TP1_ORM_Application.Services
     {
         Carrito GetCarritoId(Guid Id);
         Carrito AddCarrito(CarritoDto carrito);
-        Orden RegistrarVenta();
-        void AddOrden(Guid Id, decimal total);
+        void AddOrden(Carrito carrito);
+        Carrito ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id);
+        void DeleteProductoCarrito(string codigo);
     }
     public class CarritoService : ICarritoService
     {
@@ -37,27 +38,22 @@ namespace TP1_ORM_Application.Services
 
             return carritoMapeado;
         }
-
-        public Orden RegistrarVenta()
+      
+        public Carrito ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id)
         {
-            var venta = _carritoRepository.RegistrarVenta();
+            var mCarrito = _carritoRepository.ModifyCarrito(modifyCarritoDto, Id);
 
-            return;
+            return mCarrito;
         }
 
-        public void ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id)
+        public void AddOrden(Carrito carrito)
         {
-            _carritoRepository.ModifyCarrito(modifyCarritoDto, Id);
+            _carritoRepository.AddCarrito(carrito);
         }
 
-        public void AddOrden(Guid Id, decimal total)
+        public void DeleteProductoCarrito(string codigo)
         {
-            _carritoRepository.AddOrden(Id, total);
-        }
-
-        public void DeleteCarrito(Guid Id)
-        {
-            _carritoRepository.DeleteCarrito(Id);
+            _carritoRepository.DeleteProductoCarrito(codigo);
         }
     }
 }

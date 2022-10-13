@@ -11,6 +11,7 @@ namespace TP2_ORM_Damico_Claudio.Utilities
             CreateMap<Cliente, ClienteDto>().ReverseMap();
             CreateMap<Producto, ProductoDto>().ReverseMap();  
             CreateMap<Carrito, CarritoDto>().ReverseMap();
+            CreateMap<Orden, OrdenDto>().ReverseMap();
         }
     }
 }

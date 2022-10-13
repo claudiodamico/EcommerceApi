@@ -56,7 +56,6 @@ C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_C
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_Claudio\TP2-ORM_Damico_Claudio\obj\Debug\net6.0\TP2-ORM-Presentation.AssemblyInfoInputs.cache
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_Claudio\TP2-ORM_Damico_Claudio\obj\Debug\net6.0\TP2-ORM-Presentation.AssemblyInfo.cs
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_Claudio\TP2-ORM_Damico_Claudio\obj\Debug\net6.0\TP2-ORM-Presentation.csproj.CoreCompileInputs.cache
-C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_Claudio\TP2-ORM_Damico_Claudio\obj\Debug\net6.0\TP2-ORM-Presentation.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_Claudio\TP2-ORM_Damico_Claudio\obj\Debug\net6.0\TP2-ORM-Presentation.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_Claudio\TP2-ORM_Damico_Claudio\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-2\TP2-ORM_Damico_Claudio\TP2-ORM_Damico_Claudio\obj\Debug\net6.0\staticwebassets.development.json

@@ -899,40 +899,40 @@
           }
         }
       },
-      "TP1-ORM-AccessData/1.0.0": {
+      "TP1-REST-AccessData/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
-          "TP1-ORM-Application": "1.0.0",
-          "TP1-ORM-Domain": "1.0.0"
+          "TP1-REST-Application": "1.0.0",
+          "TP1-REST-Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/TP1-ORM-AccessData.dll": {}
+          "bin/placeholder/TP1-REST-AccessData.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TP1-ORM-AccessData.dll": {}
+          "bin/placeholder/TP1-REST-AccessData.dll": {}
         }
       },
-      "TP1-ORM-Application/1.0.0": {
+      "TP1-REST-Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
-          "TP1-ORM-Domain": "1.0.0"
+          "TP1-REST-Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/TP1-ORM-Application.dll": {}
+          "bin/placeholder/TP1-REST-Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TP1-ORM-Application.dll": {}
+          "bin/placeholder/TP1-REST-Application.dll": {}
         }
       },
-      "TP1-ORM-Domain/1.0.0": {
+      "TP1-REST-Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -941,10 +941,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
         },
         "compile": {
-          "bin/placeholder/TP1-ORM-Domain.dll": {}
+          "bin/placeholder/TP1-REST-Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TP1-ORM-Domain.dll": {}
+          "bin/placeholder/TP1-REST-Domain.dll": {}
         }
       }
     }
@@ -2323,20 +2323,20 @@
         "version.txt"
       ]
     },
-    "TP1-ORM-AccessData/1.0.0": {
+    "TP1-REST-AccessData/1.0.0": {
       "type": "project",
-      "path": "../TP1-ORM-AccessData/TP1-ORM-AccessData.csproj",
-      "msbuildProject": "../TP1-ORM-AccessData/TP1-ORM-AccessData.csproj"
+      "path": "../TP1-ORM-AccessData/TP1-REST-AccessData.csproj",
+      "msbuildProject": "../TP1-ORM-AccessData/TP1-REST-AccessData.csproj"
     },
-    "TP1-ORM-Application/1.0.0": {
+    "TP1-REST-Application/1.0.0": {
       "type": "project",
-      "path": "../TP1-ORM-Application/TP1-ORM-Application.csproj",
-      "msbuildProject": "../TP1-ORM-Application/TP1-ORM-Application.csproj"
+      "path": "../TP1-ORM-Application/TP1-REST-Application.csproj",
+      "msbuildProject": "../TP1-ORM-Application/TP1-REST-Application.csproj"
     },
-    "TP1-ORM-Domain/1.0.0": {
+    "TP1-REST-Domain/1.0.0": {
       "type": "project",
-      "path": "../TP1-ORM-Domain/TP1-ORM-Domain.csproj",
-      "msbuildProject": "../TP1-ORM-Domain/TP1-ORM-Domain.csproj"
+      "path": "../TP1-ORM-Domain/TP1-REST-Domain.csproj",
+      "msbuildProject": "../TP1-ORM-Domain/TP1-REST-Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2347,8 +2347,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9",
       "Swashbuckle.AspNetCore >= 6.2.3",
-      "TP1-ORM-AccessData >= 1.0.0",
-      "TP1-ORM-Application >= 1.0.0"
+      "TP1-REST-AccessData >= 1.0.0",
+      "TP1-REST-Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2359,9 +2359,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM-Presentation.csproj",
-      "projectName": "TP2-ORM-Presentation",
-      "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM-Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
+      "projectName": "TP1-REST-Presentation",
+      "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
       "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\obj\\",
       "projectStyle": "PackageReference",
@@ -2386,11 +2386,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-ORM-AccessData.csproj": {
-              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-ORM-AccessData.csproj"
+            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
+              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj"
             },
-            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj": {
-              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-ORM-Application.csproj"
+            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
+              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj"
             }
           }
         }
