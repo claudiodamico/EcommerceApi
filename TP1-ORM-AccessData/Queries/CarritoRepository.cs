@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using TP1_ORM_AccessData.Data;
 using TP1_ORM_Domain.Commands;
 using TP1_ORM_Domain.Dtos;
@@ -17,7 +18,16 @@ namespace TP1_ORM_AccessData.Queries
 
         public Carrito GetCarritoId(Guid Id)
         {
-            return _context.Carritos.SingleOrDefault(x => x.CarritoId == Id);
+            return _context.Carritos.Include(Carrito => Carrito.CarritoProductos)
+                                    .ThenInclude(carro => carro.Producto)
+                                    .FirstOrDefault(d => d.CarritoId.Equals(Id) && d.Estado == true);
+        }
+
+        public Carrito GetCarritoClienteId(int Id)
+        {
+            return _context.Carritos.Include(Carrito => Carrito.CarritoProductos)
+                                    .ThenInclude(carro => carro.Producto)
+                                    .FirstOrDefault(d => d.ClienteId.Equals(Id) && d.Estado == true);
         }
 
         public void AddCarrito(Carrito carrito)
@@ -31,7 +41,40 @@ namespace TP1_ORM_AccessData.Queries
             _context.Carritos.Add(tempCarrito);
             _context.SaveChanges();
         }
-       
+
+        public CarritoProducto GetCarritoProductoById(Guid id, int Id)
+        {
+            return _context.CarritoProductos.FirstOrDefault(d => d.CarritoId == id && d.ProductoId == Id);
+        }
+
+        public Carrito GetCarritoById(Guid id)
+        {
+            return _context.Carritos.Include(Carrito => Carrito.CarritoProductos)
+                                 .ThenInclude(carro => carro.Producto)
+                                 .FirstOrDefault(d => d.CarritoId.Equals(id));
+        }
+
+        public Carrito CreateCarrito(Carrito carrito)
+        {
+            _context.Carritos.Add(carrito);
+            _context.SaveChanges();
+            return carrito;
+        }
+
+        public Carrito UpdateCarrito(Carrito Carrito)
+        {
+            _context.Update(Carrito);
+            _context.SaveChanges();
+            return Carrito;
+        }
+
+        public CarritoProducto UpdateCarritoProducto(CarritoProducto carrito)
+        {
+            _context.CarritoProductos.Update(carrito);
+            _context.SaveChanges();
+            return carrito;
+        }
+
         public Carrito ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id)
         {
             var cliente = _context.Clientes.Find(Id);
@@ -45,10 +88,11 @@ namespace TP1_ORM_AccessData.Queries
             return modify;
         }
 
-        public void DeleteProductoCarrito(string codigo)
+        public CarritoProducto DeleteProductoCarrito(CarritoProducto carritoProducto)
         {
-            _context.Remove(codigo);
+            _context.Remove(carritoProducto);
             _context.SaveChanges();
+            return carritoProducto;
         }
     }
 }

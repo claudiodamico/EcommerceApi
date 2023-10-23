@@ -7,8 +7,13 @@ namespace TP1_ORM_Domain.Commands
     public interface ICarritoRepository
     {
         Carrito GetCarritoId(Guid Id);
-        void AddCarrito(Carrito carrito);
+        Carrito GetCarritoClienteId(int Id);
+        CarritoProducto GetCarritoProductoById(Guid id, int Id);
+        Carrito GetCarritoById(Guid id);
+        Carrito CreateCarrito(Carrito carrito);
+        Carrito UpdateCarrito(Carrito Carrito);
+        CarritoProducto UpdateCarritoProducto(CarritoProducto carrito);
         Carrito ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id);
-        void DeleteProductoCarrito(string codigo);
+        CarritoProducto DeleteProductoCarrito(CarritoProducto carritoProducto);
     }
 }

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP1-REST-Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.CarritoController.AddProductoCarrito(TP1_ORM_Domain.Dtos.CarritoDto)">
+            <summary>
+            Agregar productos al carrito
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.CarritoController.ModifyCarrito(TP1_ORM_Domain.Dtos.ModifyCarritoDto)">
+            <summary>
+            Modificar carrito
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.CarritoController.DeleteProductoCarrito(System.Int32,System.Int32)">
+            <summary>
+            Eliminar producto del carrito
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.ClienteController.GetClientes(System.String,System.String,System.String)">
+            <summary>
+            Filtrar Clientes por Nombre, Apellido o Dni
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.ClienteController.RegistrarCliente(TP1_ORM_Domain.Dtos.ClienteDto)">
+            <summary>
+            Registrar Cliente
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.OrdenController.RegistrarVenta(System.Int32)">
+            <summary>
+            Registrar venta
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.OrdenController.GetBalanceDiario(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Traer balance diario de ventas
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.ProductoController.GetProductos(System.String)">
+            <summary>
+            Filtrar Productos por Nombre y precio
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.ProductoController.GetProductosByid(System.Int32)">
+            <summary>
+            Filtrar Productos por Id
+            </summary>
+        </member>
+    </members>
+</doc>

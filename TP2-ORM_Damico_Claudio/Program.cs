@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 using TP1_ORM_AccessData.Data;
 using TP1_ORM_AccessData.Queries;
 using TP1_ORM_Application.Services;
@@ -15,8 +17,18 @@ builder.Services.AddDbContext<TiendaDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    //Titulo
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Software Lion", Version = "v1" });
+    c.IncludeXmlComments(xmlPath);
+});
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //Repository
 builder.Services.AddTransient<IClienteRepository, ClienteRepository>();

@@ -10,6 +10,7 @@ namespace TP1_ORM_Application.Services
     {
         List<ClienteDto> GetCliente(string nombre = null, string apellido = null, string dni = null);
         Cliente CrearCliente(ClienteDto cliente);
+        ClienteDto GetClienteById(int id);
         List<Cliente> GetAllClientes();
     }
     public class ClienteService : IClientesService
@@ -42,6 +43,12 @@ namespace TP1_ORM_Application.Services
             var clientes = _clienteRepository.GetCliente(nombre, apellido, dni);
 
             return _mapper.Map<List<ClienteDto>>(clientes);
+        }
+
+        public ClienteDto GetClienteById(int id)
+        {
+            var cliente = _clienteRepository.GetClienteById(id);
+            return _mapper.Map<ClienteDto>(cliente);
         }
     }
 }

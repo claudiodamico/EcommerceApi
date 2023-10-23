@@ -104,22 +104,22 @@ namespace TP1_ORM_AccessData.Data
             new Producto
             {
                 ProductoId = 1,
-                Nombre = "Remera Wave",
-                Descripcion = "Es una remera de mangas cortas, de caida recta, totalmente ideada para que luzcas nuestra marca con tu mejor potencial.",
+                Nombre = "Remera Space Wave",
+                Descripcion = "Es una chomba de mangas cortas, de caida recta, totalmente ideada para que luzcas nuestra marca con tu mejor potencial.",
                 Marca = "Billabong",
                 Codigo = "20923",
-                Precio = 5499,
-                Imagen = "https://www.billabong.com.ar/productos/remera-wave2/?variant=429183626",
+                Precio = 15999,
+                Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/11147033-j-6c9e20ce32654e059616944705014965-1024-1024.jpg",
             },
             new Producto
             {
                 ProductoId = 2,
-                Nombre = "Remera Big Wave",
+                Nombre = "Remera New Wave HS",
                 Descripcion = "Big Wave es una remera básica con estampa de marca de lado del frente. Novedad de esta temporada Winter22. Realizada con algodón sustentable",
                 Marca = "Billabong",
                 Codigo = "20924",
-                Precio = 5999,
-                Imagen = "https://www.billabong.com.ar/productos/remera-big-wave/?variant=419245581",
+                Precio = 13999,
+                Imagen = "https://d3ugyf2ht6aenh.cloudfront.net/stores/987/679/products/11137062-j-61-5fdbd4b4f6d758f7cf16675871404328-640-0.jpg",
             },
             new Producto
             {
@@ -128,8 +128,8 @@ namespace TP1_ORM_AccessData.Data
                 Descripcion = " Remera Rip Curl. Relaxed Fit. Estampa frente y espalda. Estampa interna de marca y logo. Grifa logo. 100% Algodón. Jersey 16/1.",
                 Marca = "Rip Curl",
                 Codigo = "92364",
-                Precio = 7999,
-                Imagen = "https://www.ripcurlargentina.com/producto_detalle///remerarip_curl_crecent/23284.html",
+                Precio = 17999,
+                Imagen = "https://www.cristobalcolon.com/fullaccess/item23284foto100240.jpg",
             },
             new Producto
             {
@@ -138,8 +138,8 @@ namespace TP1_ORM_AccessData.Data
                 Descripcion = "Reloj Rip Curl Detroit.CUADRANTE: 3 agujas. CARCASA: Acero inoxidable de calidad marina. Lente de cristal mineral Enchapado Iónico. Sumergible hasta 100m. Ancho:48mm. MALLA:Cuero",
                 Marca = "Rip Curl",
                 Codigo = "3084",
-                Precio = 69999,
-                Imagen = "https://www.ripcurlargentina.com/producto_detalle///relojrip_curl_detroit/7252.html",
+                Precio = 89999,
+                Imagen = "https://www.cristobalcolon.com/fullaccess/item7252foto80160.jpg",
             },
             new Producto
             {
@@ -148,8 +148,8 @@ namespace TP1_ORM_AccessData.Data
                 Descripcion = "Billetera Rip Curl 2 en 1.  100% cuero. Protección RFID. Nota gemela. Moneda con cremallera. Varias ranuras para tarjetas. Cartera delgada extraíble. Ventana de identificación.",
                 Marca = "Rip Curl",
                 Codigo = "3097",
-                Precio = 8999,
-                Imagen = "https://www.ripcurlargentina.com/producto_detalle///billeterarip_curl_2_en_1/12729.html",
+                Precio = 18999,
+                Imagen = "https://www.cristobalcolon.com/fullaccess/item12729foto102760.jpg",
             },
             new Producto
             {
@@ -158,28 +158,28 @@ namespace TP1_ORM_AccessData.Data
                 Descripcion = "Jogging Rip Curl Logo. Rustico invisible Jogging. Standard fit. Cintura y punos con elastico. Heattransfers logo. Cordon de ajuste al tono. Multietiquetas. 100% Algodon.",
                 Marca = "Rip Curl",
                 Codigo = "3065",
-                Precio = 17999,
-                Imagen = "https://www.ripcurlargentina.com/producto_detalle///joggingrip_curl_logo/23364.html",
+                Precio = 27999,
+                Imagen = "https://www.cristobalcolon.com/fullaccess/item23364foto100473.jpg",
             },
             new Producto
             {
                 ProductoId = 7,
-                Nombre = "Remera MC Mirror",
-                Descripcion = "Remera manga corta Tela: Jersey vigore Fit: Regular Back de talle estampado Tela:100% Algodón",
+                Nombre = "Remera Mc Small Chest Logo",
+                Descripcion = "Remera manga corta, Tela: Jersey 30.1, Fit: Regular, TELA: 100% Algodón",
                 Marca = "Quiksilver",
                 Codigo = "102034",
-                Precio = 5999,
-                Imagen = "https://www.quiksilver.com.ar/remera-mc-mirror-logo-neg-quiksilver",
+                Precio = 12249,
+                Imagen = "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2232102218-10_1.jpg",
             },
             new Producto
             {
                 ProductoId = 8,
-                Nombre = "Buzo Comp Logo Azul",
-                Descripcion = "TELA: Algodón / Poliéster. Buzo bosa. Tela: Frisa pesada Vigore. Fit: Regular. Estampa en pecho",
+                Nombre = "Sweater Perennials",
+                Descripcion = "HILADO: 100% Algodón, Sweater, Fit: Regular, Cuello redondo, Logo bordado en el frente",
                 Marca = "Quiksilver",
                 Codigo = "108115",
-                Precio = 13499,
-                Imagen = "https://www.quiksilver.com.ar/buzo-comp-logo-azul-quiksilver",
+                Precio = 34799,
+                Imagen = "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2241111001-10_1.jpg",
             },
             new Producto
             {
@@ -188,18 +188,18 @@ namespace TP1_ORM_AccessData.Data
                 Descripcion = "Zapatilla Bota de caña baja realizada en cuero vacuno descarne y textil. Suela de eva inyectada para mayor confort",
                 Marca = "Quiksilver",
                 Codigo = "112007",
-                Precio = 25999,
-                Imagen = "https://www.quiksilver.com.ar/zapatillas-fujia-olv-quiksilver",
+                Precio = 54299,
+                Imagen = "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2222112007-35_1.jpg",
             },
             new Producto
             {
                 ProductoId = 10,
-                Nombre = "Buzo Fundamental Crew",
-                Descripcion = "El Fundamental es un buzo básico de escote redondo con una etiqueta grifa de Billabong en el pecho que traemos y mejoramos todas las temporadas. Ideal para usarlo todos los días y en todo momento.",
+                Nombre = "Buzo Core Crew",
+                Descripcion = "El Core Crew es un buzo básico de escote redondo con una etiqueta grifa de Billabong en el pecho que traemos y mejoramos todas las temporadas.",
                 Marca = "Billabong",
                 Codigo = "92753",
-                Precio = 12499,
-                Imagen = "https://www.billabong.com.ar/productos/buzo-fundamental-crew/?variant=426790535",
+                Precio = 22999,
+                Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/mbcrefunj-11-f09dd67aac000be36716762289971567-1024-1024.jpg",
             });
         }
     }

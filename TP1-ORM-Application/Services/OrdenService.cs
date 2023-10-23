@@ -1,14 +1,13 @@
 ﻿
 using AutoMapper;
 using TP1_ORM_Domain.Commands;
-using TP1_ORM_Domain.Dtos;
 using TP1_ORM_Domain.Entities;
 
 namespace TP1_ORM_Application.Services
 {
     public interface IOrdenService
     {
-        Orden RegistrarVenta(OrdenDto orden);
+        Orden CrearOrden(Orden orden);
         List<Orden> GetBalanceDiario(DateTime? FechaDesde = null, DateTime? FechaHasta = null);
     }
     public class OrdenService : IOrdenService
@@ -23,15 +22,12 @@ namespace TP1_ORM_Application.Services
             _mapper = mapper;
         }
 
-        public Orden RegistrarVenta(OrdenDto orden)
+        public Orden CrearOrden(Orden orden)
         {
-            //var ordenMapeada = _mapper.Map<Orden>(orden);
-            var ordenNueva = _ordenRepository.RegistrarVenta(orden);
-
-            return ordenNueva;
+            return _ordenRepository.CrearOrden(orden);
         }
 
-        public List<Orden> GetBalanceDiario(DateTime? FechaDesde = null, DateTime? FechaHasta = null)
+        public List<Orden> GetBalanceDiario(DateTime? FechaDesde = null, DateTime? FechaHasta = null )
         {
             var reporte = _ordenRepository.GetBalanceDiario(FechaDesde, FechaHasta).ToList();
 

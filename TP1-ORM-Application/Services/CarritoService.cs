@@ -1,5 +1,7 @@
 ﻿
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Server.IIS.Core;
 using TP1_ORM_Domain.Commands;
 using TP1_ORM_Domain.Dtos;
 using TP1_ORM_Domain.Entities;
@@ -9,21 +11,22 @@ namespace TP1_ORM_Application.Services
     public interface ICarritoService
     {
         Carrito GetCarritoId(Guid Id);
-        Carrito AddCarrito(CarritoDto carrito);
-        void AddOrden(Carrito carrito);
+        Carrito GetCarritoClienteId(int Id);
+        CarritoProducto GetCarritoProductoById(Guid id, int Id);
+        Carrito GetCarritoById(Guid id);
+        Carrito CreateCarrito(Carrito carrito);
+        Carrito UpdateCarrito(Carrito Carrito);
+        CarritoProducto UpdateCarritoProducto(CarritoProducto carrito);
         Carrito ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id);
-        void DeleteProductoCarrito(string codigo);
+        CarritoProducto DeleteProductoCarrito(CarritoProducto carritoProducto);
     }
     public class CarritoService : ICarritoService
     {
         private readonly ICarritoRepository _carritoRepository;
-        private readonly IMapper _mapper;
 
-        public CarritoService(ICarritoRepository carritoRepository, 
-            IMapper mapper)
+        public CarritoService(ICarritoRepository carritoRepository)
         {
             _carritoRepository = carritoRepository;
-            _mapper = mapper;
         }
 
         public Carrito GetCarritoId(Guid Id)
@@ -31,14 +34,30 @@ namespace TP1_ORM_Application.Services
             return _carritoRepository.GetCarritoId(Id); 
         }
 
-        public Carrito AddCarrito(CarritoDto carrito)
+        public Carrito GetCarritoClienteId(int id)
         {
-            var carritoMapeado = _mapper.Map<Carrito>(carrito);
-            _carritoRepository.AddCarrito(carritoMapeado);
-
-            return carritoMapeado;
+            return _carritoRepository.GetCarritoClienteId(id);
         }
-      
+
+        public CarritoProducto GetCarritoProductoById(Guid id, int productoId)
+        {
+            return _carritoRepository.GetCarritoProductoById(id, productoId);
+        }
+
+        public Carrito GetCarritoById(Guid id)
+        {
+            return _carritoRepository.GetCarritoById(id);
+        }
+
+        public Carrito UpdateCarrito(Carrito carrito)
+        {
+            return _carritoRepository.UpdateCarrito(carrito);
+        }
+        public CarritoProducto UpdateCarritoProducto(CarritoProducto carrito)
+        {
+            return _carritoRepository.UpdateCarritoProducto(carrito);
+        }
+
         public Carrito ModifyCarrito(ModifyCarritoDto modifyCarritoDto, Guid Id)
         {
             var mCarrito = _carritoRepository.ModifyCarrito(modifyCarritoDto, Id);
@@ -46,14 +65,14 @@ namespace TP1_ORM_Application.Services
             return mCarrito;
         }
 
-        public void AddOrden(Carrito carrito)
+        public Carrito CreateCarrito(Carrito carrito)
         {
-            _carritoRepository.AddCarrito(carrito);
+            return _carritoRepository.CreateCarrito(carrito);
         }
 
-        public void DeleteProductoCarrito(string codigo)
+        public CarritoProducto DeleteProductoCarrito(CarritoProducto carritoProducto)
         {
-            _carritoRepository.DeleteProductoCarrito(codigo);
+            return _carritoRepository.DeleteProductoCarrito(carritoProducto);
         }
     }
 }

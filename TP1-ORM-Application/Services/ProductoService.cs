@@ -10,7 +10,7 @@ namespace TP1_ORM_Application.Services
     public interface IProductoService
     {
         List<Producto> GetAllProductos();
-        Producto GetProductoById(int id);
+        ProductoDto GetProductoById(int id);
         List<ProductoDto> GetProducto(string? nombre = null);
     }
     public class ProductoService : IProductoService
@@ -37,14 +37,14 @@ namespace TP1_ORM_Application.Services
             return _mapper.Map<List<ProductoDto>>(productos);
         }
 
-        public Producto GetProductoById(int id)
+        public ProductoDto GetProductoById(int id)
         {
             var producto = _productoRepository.GetProductoById(id);
             if (producto == null)
             {
                 return null;
             }
-            return producto;
+            return _mapper.Map<ProductoDto>(producto);
         }
     }
 }

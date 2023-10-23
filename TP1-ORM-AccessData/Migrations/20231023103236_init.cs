@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TP1_ORM_AccessData.Migrations
 {
-    public partial class Tiendita : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -18,7 +18,7 @@ namespace TP1_ORM_AccessData.Migrations
                     DNI = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
                     Apellido = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
                     Telefono = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false)
                 },
                 constraints: table =>
@@ -113,16 +113,16 @@ namespace TP1_ORM_AccessData.Migrations
                 columns: new[] { "ProductoId", "Codigo", "Descripcion", "Imagen", "Marca", "Nombre", "Precio" },
                 values: new object[,]
                 {
-                    { 1, "20923", "Es una remera de mangas cortas, de caida recta, totalmente ideada para que luzcas nuestra marca con tu mejor potencial.", "https://www.billabong.com.ar/productos/remera-wave2/?variant=429183626", "Billabong", "Remera Wave", 5499m },
-                    { 2, "20924", "Big Wave es una remera básica con estampa de marca de lado del frente. Novedad de esta temporada Winter22. Realizada con algodón sustentable", "https://www.billabong.com.ar/productos/remera-big-wave/?variant=419245581", "Billabong", "Remera Big Wave", 5999m },
-                    { 3, "92364", " Remera Rip Curl. Relaxed Fit. Estampa frente y espalda. Estampa interna de marca y logo. Grifa logo. 100% Algodón. Jersey 16/1.", "https://www.ripcurlargentina.com/producto_detalle///remerarip_curl_crecent/23284.html", "Rip Curl", "Remera Rip Curl Crecent", 7999m },
-                    { 4, "3084", "Reloj Rip Curl Detroit.CUADRANTE: 3 agujas. CARCASA: Acero inoxidable de calidad marina. Lente de cristal mineral Enchapado Iónico. Sumergible hasta 100m. Ancho:48mm. MALLA:Cuero", "https://www.ripcurlargentina.com/producto_detalle///relojrip_curl_detroit/7252.html", "Rip Curl", "Reloj Rip Curl Detroit", 69999m },
-                    { 5, "3097", "Billetera Rip Curl 2 en 1.  100% cuero. Protección RFID. Nota gemela. Moneda con cremallera. Varias ranuras para tarjetas. Cartera delgada extraíble. Ventana de identificación.", "https://www.ripcurlargentina.com/producto_detalle///billeterarip_curl_2_en_1/12729.html", "Rip Curl", "Billetera Rip Curl 2 en 1", 8999m },
-                    { 6, "3065", "Jogging Rip Curl Logo. Rustico invisible Jogging. Standard fit. Cintura y punos con elastico. Heattransfers logo. Cordon de ajuste al tono. Multietiquetas. 100% Algodon.", "https://www.ripcurlargentina.com/producto_detalle///joggingrip_curl_logo/23364.html", "Rip Curl", "Jogging Rip Curl Logo", 17999m },
-                    { 7, "102034", "Remera manga corta Tela: Jersey vigore Fit: Regular Back de talle estampado Tela:100% Algodón", "https://www.quiksilver.com.ar/remera-mc-mirror-logo-neg-quiksilver", "Quiksilver", "Remera MC Mirror", 5999m },
-                    { 8, "108115", "TELA: Algodón / Poliéster. Buzo bosa. Tela: Frisa pesada Vigore. Fit: Regular. Estampa en pecho", "https://www.quiksilver.com.ar/buzo-comp-logo-azul-quiksilver", "Quiksilver", "Buzo Comp Logo Azul", 13499m },
-                    { 9, "112007", "Zapatilla Bota de caña baja realizada en cuero vacuno descarne y textil. Suela de eva inyectada para mayor confort", "https://www.quiksilver.com.ar/zapatillas-fujia-olv-quiksilver", "Quiksilver", "Zapatillas Fujia Olv", 25999m },
-                    { 10, "92753", "El Fundamental es un buzo básico de escote redondo con una etiqueta grifa de Billabong en el pecho que traemos y mejoramos todas las temporadas. Ideal para usarlo todos los días y en todo momento.", "https://www.billabong.com.ar/productos/buzo-fundamental-crew/?variant=426790535", "Billabong", "Buzo Fundamental Crew", 12499m }
+                    { 1, "20923", "Es una chomba de mangas cortas, de caida recta, totalmente ideada para que luzcas nuestra marca con tu mejor potencial.", "https://acdn.mitiendanube.com/stores/987/679/products/11147033-j-6c9e20ce32654e059616944705014965-1024-1024.jpg", "Billabong", "Remera Space Wave", 15999m },
+                    { 2, "20924", "Big Wave es una remera básica con estampa de marca de lado del frente. Novedad de esta temporada Winter22. Realizada con algodón sustentable", "https://d3ugyf2ht6aenh.cloudfront.net/stores/987/679/products/11137062-j-61-5fdbd4b4f6d758f7cf16675871404328-640-0.jpg", "Billabong", "Remera New Wave HS", 13999m },
+                    { 3, "92364", " Remera Rip Curl. Relaxed Fit. Estampa frente y espalda. Estampa interna de marca y logo. Grifa logo. 100% Algodón. Jersey 16/1.", "https://www.cristobalcolon.com/fullaccess/item23284foto100240.jpg", "Rip Curl", "Remera Rip Curl Crecent", 17999m },
+                    { 4, "3084", "Reloj Rip Curl Detroit.CUADRANTE: 3 agujas. CARCASA: Acero inoxidable de calidad marina. Lente de cristal mineral Enchapado Iónico. Sumergible hasta 100m. Ancho:48mm. MALLA:Cuero", "https://www.cristobalcolon.com/fullaccess/item7252foto80160.jpg", "Rip Curl", "Reloj Rip Curl Detroit", 89999m },
+                    { 5, "3097", "Billetera Rip Curl 2 en 1.  100% cuero. Protección RFID. Nota gemela. Moneda con cremallera. Varias ranuras para tarjetas. Cartera delgada extraíble. Ventana de identificación.", "https://www.cristobalcolon.com/fullaccess/item12729foto102760.jpg", "Rip Curl", "Billetera Rip Curl 2 en 1", 18999m },
+                    { 6, "3065", "Jogging Rip Curl Logo. Rustico invisible Jogging. Standard fit. Cintura y punos con elastico. Heattransfers logo. Cordon de ajuste al tono. Multietiquetas. 100% Algodon.", "https://www.cristobalcolon.com/fullaccess/item23364foto100473.jpg", "Rip Curl", "Jogging Rip Curl Logo", 27999m },
+                    { 7, "102034", "Remera manga corta, Tela: Jersey 30.1, Fit: Regular, TELA: 100% Algodón", "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2232102218-10_1.jpg", "Quiksilver", "Remera Mc Small Chest Logo", 12249m },
+                    { 8, "108115", "HILADO: 100% Algodón, Sweater, Fit: Regular, Cuello redondo, Logo bordado en el frente", "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2241111001-10_1.jpg", "Quiksilver", "Sweater Perennials", 34799m },
+                    { 9, "112007", "Zapatilla Bota de caña baja realizada en cuero vacuno descarne y textil. Suela de eva inyectada para mayor confort", "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2222112007-35_1.jpg", "Quiksilver", "Zapatillas Fujia Olv", 54299m },
+                    { 10, "92753", "El Core Crew es un buzo básico de escote redondo con una etiqueta grifa de Billabong en el pecho que traemos y mejoramos todas las temporadas.", "https://acdn.mitiendanube.com/stores/987/679/products/mbcrefunj-11-f09dd67aac000be36716762289971567-1024-1024.jpg", "Billabong", "Buzo Core Crew", 22999m }
                 });
 
             migrationBuilder.CreateIndex(

@@ -6,8 +6,7 @@ namespace TP1_ORM_Domain.Commands
 {
     public interface IOrdenRepository
     {
-        Orden RegistrarVenta(OrdenDto ordenDto);
-        void AddOrden(Guid Id, decimal total);
+        Orden CrearOrden(Orden orden);
         List<Orden> GetBalanceDiario(DateTime? FechaDesde = null, DateTime? FechaHasta = null);
     }
 }

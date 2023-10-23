@@ -49,7 +49,7 @@ namespace TP2_ORM_Damico_Claudio.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(ClienteDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(ClienteErrorDto), StatusCodes.Status409Conflict)]
+        [ProducesResponseType(typeof(ErrorDto), StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult RegistrarCliente([FromForm] ClienteDto cliente)
         {
@@ -66,7 +66,7 @@ namespace TP2_ORM_Damico_Claudio.Controllers
                     }
                     return BadRequest();
                 }               
-                return Conflict(new ClienteErrorDto());
+                return Conflict(new ErrorDto());
             }
             catch (Exception e)
             {

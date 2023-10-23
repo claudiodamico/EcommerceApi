@@ -1,7 +1,6 @@
 ﻿
 using TP1_ORM_AccessData.Data;
 using TP1_ORM_Domain.Commands;
-using TP1_ORM_Domain.Dtos;
 using TP1_ORM_Domain.Entities;
 
 namespace TP1_ORM_AccessData.Queries
@@ -15,57 +14,25 @@ namespace TP1_ORM_AccessData.Queries
             _context = context;
         }
 
-        public void AddOrden(Guid Id, decimal total)
+        public Orden CrearOrden(Orden orden)
         {
-            var orden = new Orden
-            {
-                OrdenId = Guid.NewGuid(),
-                CarritoId = Id,
-                Fecha = DateTime.Now,
-                Total = total
-            };
-            _context.Add(orden);
+            _context.Ordenes.Add(orden);
+            _context.SaveChanges();
+            return orden;
         }
 
         public List<Orden> GetBalanceDiario(DateTime? FechaDesde = null, DateTime? FechaHasta = null)
         {
-            return _context.Ordenes.Where(x => x.Fecha == FechaDesde && x.Fecha == FechaHasta).ToList();
-        }
-
-        public Orden RegistrarVenta(OrdenDto ordenDto)
-        {
-            Orden orden = new Orden();
-
-            var carrito = new Carrito
+            if (FechaDesde == null && FechaHasta == null)
             {
-                CarritoId = Guid.NewGuid(),
-                ClienteId = 1,
-                Estado = true
-            };
-            _context.Carritos.Add(carrito);
-
-            var producto = _context.Productos.Find();
-
-            decimal total = 0;
-
-            int cantidad = carrito.ClienteId;
-            if (cantidad != 0 && cantidad != null)
-            {
-                var itemCarrito = new CarritoProducto
-                {
-                    CarritoId = carrito.CarritoId,
-                    ProductoId = producto.ProductoId,
-                    Cantidad = cantidad
-                };
-                _context.CarritoProductos.Add(itemCarrito);
-                _context.SaveChanges();
-
-                total = producto.Precio * cantidad;
+                var ordenes = _context.Ordenes.ToList();
+                return ordenes;
             }
-
-            AddOrden(carrito.CarritoId, total);
-
-            return orden;
-        }
+            else
+            {
+                var ordenes = _context.Ordenes.Where(x => x.Fecha == FechaDesde && x.Fecha == FechaHasta).ToList();
+                return ordenes;
+            }
+        }       
     }
 }

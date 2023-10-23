@@ -570,7 +570,7 @@
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.2.3": {
+      "Swashbuckle.AspNetCore.Swagger/6.4.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.2.3"
@@ -906,6 +906,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
+          "Swashbuckle.AspNetCore.Swagger": "6.4.0",
           "TP1-REST-Application": "1.0.0",
           "TP1-REST-Domain": "1.0.0"
         },
@@ -923,6 +924,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
+          "Swashbuckle.AspNetCore.Swagger": "6.4.0",
           "TP1-REST-Domain": "1.0.0"
         },
         "compile": {
@@ -938,7 +940,8 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
+          "Swashbuckle.AspNetCore.Swagger": "6.4.0"
         },
         "compile": {
           "bin/placeholder/TP1-REST-Domain.dll": {}
@@ -1770,10 +1773,10 @@
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/6.2.3": {
-      "sha512": "qOF7j1sL0bWm8g/qqHVPCvkO3JlVvUIB8WfC98kSh6BT5y5DAnBNctfac7XR5EZf+eD7/WasvANncTqwZYfmWQ==",
+    "Swashbuckle.AspNetCore.Swagger/6.4.0": {
+      "sha512": "nl4SBgGM+cmthUcpwO/w1lUjevdDHAqRvfUoe4Xp/Uvuzt9mzGUwyFCqa3ODBAcZYBiFoKvrYwz0rabslJvSmQ==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/6.2.3",
+      "path": "swashbuckle.aspnetcore.swagger/6.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1789,7 +1792,7 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
@@ -2347,30 +2350,29 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9",
       "Swashbuckle.AspNetCore >= 6.2.3",
+      "Swashbuckle.AspNetCore.Swagger >= 6.4.0",
       "TP1-REST-AccessData >= 1.0.0",
       "TP1-REST-Application >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\casto\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Claudio\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
+      "projectUniqueName": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
       "projectName": "TP1-REST-Presentation",
-      "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
-      "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\obj\\",
+      "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
+      "packagesPath": "C:\\Users\\Claudio\\.nuget\\packages\\",
+      "outputPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Claudio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2386,11 +2388,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
-              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj"
+            "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
+              "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj"
             },
-            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
-              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-2\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj"
+            "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
+              "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj"
             }
           }
         }
@@ -2432,6 +2434,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
+          },
+          "Swashbuckle.AspNetCore.Swagger": {
+            "target": "Package",
+            "version": "[6.4.0, )"
           }
         },
         "imports": [
@@ -2453,7 +2459,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
