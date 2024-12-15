@@ -1,5 +1,4 @@
-﻿
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using TP1_ORM_Application.Services;
 using TP1_ORM_Domain.Dtos;
@@ -17,30 +16,26 @@ namespace TP2_ORM_Damico_Claudio.Controllers
         private readonly IMapper _mapper;
 
         public OrdenController(IOrdenService ordenService,
-            ICarritoService clienteService,
-            IClientesService clientesService,
+            ICarritoService carritoService,
+            IClientesService clienteService,
             IMapper mapper)
         {
             _ordenService = ordenService;
-            _carritoService = clienteService;
-            _clienteService = clientesService;
+            _carritoService = carritoService;
+            _clienteService = clienteService;
             _mapper = mapper;
         }
 
         /// <summary>
         /// Registrar venta
         /// </summary>
-        [HttpPost]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ErrorDto), StatusCodes.Status409Conflict)]
-        [ProducesResponseType(typeof(ErrorDto), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ErrorDto), StatusCodes.Status400BadRequest)]
+        [HttpPost("registrar-venta")]
         public IActionResult RegistrarVenta(int ClienteId)
         {
             try
             {
                 var cliente = _clienteService.GetClienteById(ClienteId);
-                if(cliente == null)
+                if (cliente == null)
                 {
                     var error = new ErrorDto
                     {
@@ -50,7 +45,7 @@ namespace TP2_ORM_Damico_Claudio.Controllers
                     return NotFound(error);
                 }
                 var carritoId = _carritoService.GetCarritoClienteId(ClienteId);
-                if(carritoId == null)
+                if (carritoId == null || !carritoId.CarritoProductos.Any())
                 {
                     var error = new ErrorDto
                     {
@@ -61,65 +56,67 @@ namespace TP2_ORM_Damico_Claudio.Controllers
                 }
                 else
                 {
-                    decimal total = 0;
-                    foreach (CarritoProducto producto in carritoId.CarritoProductos)
-                    {
-                        total = (decimal)(producto.Producto.Precio * producto.Cantidad);
-                    }
-                    var Orden = new Orden
+                    decimal total = carritoId.CarritoProductos.Sum(producto => (decimal)(producto.Producto.Precio * producto.Cantidad));
+
+                    var orden = new Orden
                     {
                         OrdenId = Guid.NewGuid(),
                         CarritoId = carritoId.CarritoId,
                         Total = total,
                         Fecha = DateTime.Now
                     };
-                    _ordenService.CrearOrden(Orden);
+
+                    _ordenService.CrearOrden(orden);
+
                     carritoId.Estado = false;
                     _carritoService.UpdateCarrito(carritoId);
-                    return Ok("Se ha creado la orden de compra exitosamente");
+
+                    return Ok(new { message = "Se ha creado la orden de compra exitosamente" });
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest("Los datos ingresados son incorrectos");
+                return BadRequest(new { message = "Error inesperado al registrar la venta", detalle = ex.Message });
             }
         }
 
+
         /// <summary>
-        /// Traer balance diario de ventas
+        /// Obtener balance diario de ventas
         /// </summary>
-        [HttpGet]
+        [HttpGet("balance-diario")]
         [ProducesResponseType(typeof(List<OrdenDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorDto), StatusCodes.Status500InternalServerError)]
         public IActionResult GetBalanceDiario([FromQuery] DateTime? FechaDesde = null, DateTime? FechaHasta = null)
         {
             try
             {
-                var orden = _ordenService.GetBalanceDiario(FechaDesde, FechaHasta);
-                List<OrdenDto> ordenes = new List<OrdenDto>();
-                foreach(var item in orden)
+                // Obtener órdenes en el rango de fechas
+                var ordenes = _ordenService.GetBalanceDiario(FechaDesde, FechaHasta);
+                var resultado = new List<OrdenDto>();
+
+                foreach (var orden in ordenes)
                 {
-                    List<ProductoDto> productos = new List<ProductoDto>();
-                    var carrito = _carritoService.GetCarritoById(item.CarritoId);
-                    foreach(var producto in carrito.CarritoProductos)
-                    {
-                        productos.Add(_mapper.Map<ProductoDto>(producto.Producto));
-                    }
-                    var ordenMapped = _mapper.Map<OrdenDto>(item);
-                    ordenMapped.Productos = productos;
-                    ordenes.Add(ordenMapped);
+                    var carrito = _carritoService.GetCarritoById(orden.CarritoId);
+                    var productos = carrito.CarritoProductos
+                                           .Select(cp => _mapper.Map<ProductoDto>(cp.Producto))
+                                           .ToList();
+
+                    var ordenDto = _mapper.Map<OrdenDto>(orden);
+                    ordenDto.Productos = productos;
+
+                    resultado.Add(ordenDto);
                 }
 
-                return Ok(ordenes);
+                return Ok(resultado);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                var error = new ErrorDto()
+                return StatusCode(StatusCodes.Status500InternalServerError, new ErrorDto
                 {
-                    descripcion = e.Message,
-                    codigoError = "404",
-                };
-                return NotFound(error);
+                    descripcion = $"Error al obtener el balance diario: {ex.Message}",
+                    codigoError = "500"
+                });
             }
         }
     }

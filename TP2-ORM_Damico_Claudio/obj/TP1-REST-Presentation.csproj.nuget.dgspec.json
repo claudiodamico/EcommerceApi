@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj": {}
+    "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj": {}
   },
   "projects": {
-    "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
+    "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj",
         "projectName": "TP1-REST-AccessData",
-        "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj",
-        "packagesPath": "C:\\Users\\Claudio\\.nuget\\packages\\",
-        "outputPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\obj\\",
+        "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj",
+        "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-AccessData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Claudio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
-                "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj"
+              "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\TP1-REST-Application.csproj"
               },
-              "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
-                "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj"
+              "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\TP1-REST-Domain.csproj"
               }
             }
           }
@@ -46,7 +45,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -92,29 +97,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
+    "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\TP1-REST-Application.csproj",
         "projectName": "TP1-REST-Application",
-        "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj",
-        "packagesPath": "C:\\Users\\Claudio\\.nuget\\packages\\",
-        "outputPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\obj\\",
+        "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\TP1-REST-Application.csproj",
+        "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Claudio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -123,15 +142,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
-                "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj"
+              "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\TP1-REST-Domain.csproj"
               }
             }
           }
@@ -140,7 +158,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -186,29 +210,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
+    "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\TP1-REST-Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
         "projectName": "TP1-REST-Domain",
-        "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
-        "packagesPath": "C:\\Users\\Claudio\\.nuget\\packages\\",
-        "outputPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Domain\\obj\\",
+        "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\TP1-REST-Domain.csproj",
+        "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Claudio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -217,7 +255,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -230,7 +267,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -276,29 +319,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj": {
+    "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
         "projectName": "TP1-REST-Presentation",
-        "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
-        "packagesPath": "C:\\Users\\Claudio\\.nuget\\packages\\",
-        "outputPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP2-ORM_Damico_Claudio\\obj\\",
+        "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP2-ORM_Damico_Claudio\\TP1-REST-Presentation.csproj",
+        "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP2-ORM_Damico_Claudio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Claudio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -307,18 +364,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
-                "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj"
+              "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-AccessData\\TP1-REST-AccessData.csproj"
               },
-              "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
-                "projectPath": "E:\\Mis Documentos\\Unaj\\2do Cuatri 2022\\Proyecto Software\\TP-3\\TP3-UI_Damico_Claudio\\TP2-ORM_Damico_Claudio\\TP1-ORM-Application\\TP1-REST-Application.csproj"
+              "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\TP1-REST-Application.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\PS\\Backend\\EcommerceApi\\TP1-ORM-Application\\TP1-REST-Application.csproj"
               }
             }
           }
@@ -327,7 +383,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -377,6 +439,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -385,7 +465,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

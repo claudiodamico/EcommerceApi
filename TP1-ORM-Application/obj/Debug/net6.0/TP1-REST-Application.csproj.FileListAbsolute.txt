@@ -49,3 +49,21 @@ E:\Mis Documentos\Unaj\2do Cuatri 2022\Proyecto Software\TP-3\TP3-UI_Damico_Clau
 E:\Mis Documentos\Unaj\2do Cuatri 2022\Proyecto Software\TP-3\TP3-UI_Damico_Claudio\TP2-ORM_Damico_Claudio\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.pdb
 E:\Mis Documentos\Unaj\2do Cuatri 2022\Proyecto Software\TP-3\TP3-UI_Damico_Claudio\TP2-ORM_Damico_Claudio\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.genruntimeconfig.cache
 E:\Mis Documentos\Unaj\2do Cuatri 2022\Proyecto Software\TP-3\TP3-UI_Damico_Claudio\TP2-ORM_Damico_Claudio\TP1-ORM-Application\obj\Debug\net6.0\ref\TP1-REST-Application.dll
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\bin\Debug\net6.0\TP1-REST-Application.deps.json
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\bin\Debug\net6.0\TP1-REST-Application.runtimeconfig.json
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\bin\Debug\net6.0\TP1-REST-Application.dll
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\bin\Debug\net6.0\TP1-REST-Application.pdb
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\bin\Debug\net6.0\TP1-REST-Domain.dll
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\bin\Debug\net6.0\TP1-REST-Domain.pdb
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.csproj.AssemblyReference.cache
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.AssemblyInfoInputs.cache
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.AssemblyInfo.cs
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.csproj.CoreCompileInputs.cache
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.sourcelink.json
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST.A5B12A8F.Up2Date
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.dll
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\refint\TP1-REST-Application.dll
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.pdb
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\TP1-REST-Application.genruntimeconfig.cache
+C:\Users\casto\Downloads\Finales 2024\PS\Backend\EcommerceApi\TP1-ORM-Application\obj\Debug\net6.0\ref\TP1-REST-Application.dll

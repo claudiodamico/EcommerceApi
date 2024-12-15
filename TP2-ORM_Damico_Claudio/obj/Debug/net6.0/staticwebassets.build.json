@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "QS+buGVPWxuSKPhsk0aaXYP8REkDUr4tRd7QmOONU/Y=",
+  "Hash": "7rMV7J56yL8UnwQL1z2Nu8RQ0ZxN9Wq+UCV5MILAmbA=",
   "Source": "TP1-REST-Presentation",
   "BasePath": "_content/TP1-REST-Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

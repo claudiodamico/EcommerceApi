@@ -161,11 +161,11 @@ namespace TP1_ORM_AccessData.Migrations
                         {
                             ProductoId = 1,
                             Codigo = "20923",
-                            Descripcion = "Es una chomba de mangas cortas, de caida recta, totalmente ideada para que luzcas nuestra marca con tu mejor potencial.",
-                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/11147033-j-6c9e20ce32654e059616944705014965-1024-1024.jpg",
+                            Descripcion = "La remera Rotor Camo Ss te ofrece un estilo informal perfecto para un día activo.",
+                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/11157020-f-23-08b22ac57398b8db7317255612299220-1024-1024.jpg",
                             Marca = "Billabong",
-                            Nombre = "Remera Space Wave",
-                            Precio = 15999m
+                            Nombre = "Remera Rotor Camo Ss",
+                            Precio = 38999m
                         },
                         new
                         {
@@ -175,17 +175,17 @@ namespace TP1_ORM_AccessData.Migrations
                             Imagen = "https://d3ugyf2ht6aenh.cloudfront.net/stores/987/679/products/11137062-j-61-5fdbd4b4f6d758f7cf16675871404328-640-0.jpg",
                             Marca = "Billabong",
                             Nombre = "Remera New Wave HS",
-                            Precio = 13999m
+                            Precio = 33999m
                         },
                         new
                         {
                             ProductoId = 3,
                             Codigo = "92364",
-                            Descripcion = " Remera Rip Curl. Relaxed Fit. Estampa frente y espalda. Estampa interna de marca y logo. Grifa logo. 100% Algodón. Jersey 16/1.",
-                            Imagen = "https://www.cristobalcolon.com/fullaccess/item23284foto100240.jpg",
-                            Marca = "Rip Curl",
-                            Nombre = "Remera Rip Curl Crecent",
-                            Precio = 17999m
+                            Descripcion = "La Journey Ligth es una bermuda diseñada para ofrecerte el máximo confort y un look relajado. ",
+                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/11157009-a-12-cd6a6ca40691a91b4117255446442464-1024-1024.jpg",
+                            Marca = "Billabong",
+                            Nombre = "Bermuda Journey Light",
+                            Precio = 49999m
                         },
                         new
                         {
@@ -195,7 +195,7 @@ namespace TP1_ORM_AccessData.Migrations
                             Imagen = "https://www.cristobalcolon.com/fullaccess/item7252foto80160.jpg",
                             Marca = "Rip Curl",
                             Nombre = "Reloj Rip Curl Detroit",
-                            Precio = 89999m
+                            Precio = 109999m
                         },
                         new
                         {
@@ -205,57 +205,57 @@ namespace TP1_ORM_AccessData.Migrations
                             Imagen = "https://www.cristobalcolon.com/fullaccess/item12729foto102760.jpg",
                             Marca = "Rip Curl",
                             Nombre = "Billetera Rip Curl 2 en 1",
-                            Precio = 18999m
+                            Precio = 48999m
                         },
                         new
                         {
                             ProductoId = 6,
                             Codigo = "3065",
-                            Descripcion = "Jogging Rip Curl Logo. Rustico invisible Jogging. Standard fit. Cintura y punos con elastico. Heattransfers logo. Cordon de ajuste al tono. Multietiquetas. 100% Algodon.",
-                            Imagen = "https://www.cristobalcolon.com/fullaccess/item23364foto100473.jpg",
-                            Marca = "Rip Curl",
-                            Nombre = "Jogging Rip Curl Logo",
-                            Precio = 27999m
+                            Descripcion = "Descubre nuestra bermuda Straight Black denim de 5 bolsillos, diseñadas para ofrecerte la combinación perfecta de estilo y funcionalidad",
+                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/11147714-j-1-ae84da740eb2e4784d17274489145431-1024-1024.jpg",
+                            Marca = "Billabong",
+                            Nombre = "Bermuda Straight Black",
+                            Precio = 64999m
                         },
                         new
                         {
                             ProductoId = 7,
-                            Codigo = "102034",
-                            Descripcion = "Remera manga corta, Tela: Jersey 30.1, Fit: Regular, TELA: 100% Algodón",
-                            Imagen = "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2232102218-10_1.jpg",
-                            Marca = "Quiksilver",
-                            Nombre = "Remera Mc Small Chest Logo",
-                            Precio = 12249m
+                            Codigo = "101119",
+                            Descripcion = "La All Day Shoulder Bag es un morral con reguladores y etiqueta de marca en el delantero, posee tres bolsillos.",
+                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/12148009-2024-08-27t115320-477-973b18be0c5d293c5217247704544550-1024-1024.png",
+                            Marca = "Billabong",
+                            Nombre = "Bolso All Day Shoulder Bag",
+                            Precio = 59999m
                         },
                         new
                         {
                             ProductoId = 8,
                             Codigo = "108115",
-                            Descripcion = "HILADO: 100% Algodón, Sweater, Fit: Regular, Cuello redondo, Logo bordado en el frente",
-                            Imagen = "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2241111001-10_1.jpg",
-                            Marca = "Quiksilver",
-                            Nombre = "Sweater Perennials",
-                            Precio = 34799m
+                            Descripcion = "La Sumergible Suftrek Journey es una de esas prendas que no pueden faltar en tu ropero.",
+                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/abyws00166-a-4-7c6a09eccb3223337b16971430118872-1024-1024.jpg",
+                            Marca = "Billabong",
+                            Nombre = "Bermuda Surftrek",
+                            Precio = 99999m
                         },
                         new
                         {
                             ProductoId = 9,
                             Codigo = "112007",
-                            Descripcion = "Zapatilla Bota de caña baja realizada en cuero vacuno descarne y textil. Suela de eva inyectada para mayor confort",
-                            Imagen = "https://cdn.quiksilver.com.ar/media/catalog/product/cache/58de367b3bfe9e60ffd377a75f209f56/2/2/2222112007-35_1.jpg",
-                            Marca = "Quiksilver",
-                            Nombre = "Zapatillas Fujia Olv",
-                            Precio = 54299m
+                            Descripcion = "La Dagger es una musculosa con calce relaxed, con cuello redondo y con una estampa en el pecho para combinarla con cualquier outfit.",
+                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/11157504-b-1-088c4f9427fd158c1817238185572589-1024-1024.jpg",
+                            Marca = "Billabong",
+                            Nombre = "Musculosa Dagger",
+                            Precio = 31999m
                         },
                         new
                         {
                             ProductoId = 10,
                             Codigo = "92753",
-                            Descripcion = "El Core Crew es un buzo básico de escote redondo con una etiqueta grifa de Billabong en el pecho que traemos y mejoramos todas las temporadas.",
-                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/mbcrefunj-11-f09dd67aac000be36716762289971567-1024-1024.jpg",
+                            Descripcion = "Fresca para usarla en cualquier situacion, la camisa manga corta Sundays Mini Wave es la indicada.",
+                            Imagen = "https://acdn.mitiendanube.com/stores/987/679/products/19147202-p-23-5d10eae836d8f5e96417309842388819-1024-1024.jpg",
                             Marca = "Billabong",
-                            Nombre = "Buzo Core Crew",
-                            Precio = 22999m
+                            Nombre = "Camisa Sundays",
+                            Precio = 59999m
                         });
                 });
 

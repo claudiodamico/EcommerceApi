@@ -36,17 +36,22 @@
         </member>
         <member name="M:TP2_ORM_Damico_Claudio.Controllers.OrdenController.GetBalanceDiario(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
             <summary>
-            Traer balance diario de ventas
+            Obtener balance diario de ventas
             </summary>
         </member>
         <member name="M:TP2_ORM_Damico_Claudio.Controllers.ProductoController.GetProductos(System.String)">
             <summary>
-            Filtrar Productos por Nombre y precio
+            Filtrar Productos por Nombre (opcional).
             </summary>
         </member>
         <member name="M:TP2_ORM_Damico_Claudio.Controllers.ProductoController.GetProductosByid(System.Int32)">
             <summary>
-            Filtrar Productos por Id
+            Filtrar Productos por Id.
+            </summary>
+        </member>
+        <member name="M:TP2_ORM_Damico_Claudio.Controllers.ProductoController.GetProductosPorPrecio(System.Boolean)">
+            <summary>
+            Filtrar productos por precio (mayor o menor).
             </summary>
         </member>
     </members>

@@ -19,38 +19,73 @@ namespace TP2_ORM_Damico_Claudio.Controllers
         }
 
         /// <summary>
-        /// Filtrar Productos por Nombre y precio
+        /// Filtrar Productos por Nombre (opcional).
         /// </summary>
         [HttpGet]
         public IActionResult GetProductos(string? nombre)
         {
+            try
             {
-                try
+                var productos = _productoService.GetProducto(nombre);
+
+                if (productos == null || !productos.Any())
                 {
-                    return new JsonResult(_productoService.GetProducto(nombre)) { StatusCode = 200 };
+                    return NotFound(new { message = "No se encontraron productos." });
                 }
-                catch (Exception)
-                {
-                    return StatusCode(500, "Internal Server Error");
-                }
+
+                return Ok(productos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", detalle = ex.Message });
             }
         }
 
         /// <summary>
-        /// Filtrar Productos por Id
+        /// Filtrar Productos por Id.
         /// </summary>
         [HttpGet("{id}")]
         public IActionResult GetProductosByid(int id)
         {
+            try
             {
-                try
+                var producto = _productoService.GetProductoById(id);
+
+                if (producto == null)
                 {
-                    return new JsonResult(_productoService.GetProductoById(id)) { StatusCode = 200 };
+                    return NotFound(new { message = $"No se encontró el producto con ID {id}." });
                 }
-                catch (Exception)
+
+                return Ok(producto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", detalle = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Filtrar productos por precio (mayor o menor).
+        /// </summary>
+        [HttpGet("filtrar-por-precio")]
+        public IActionResult GetProductosPorPrecio([FromQuery] bool mayor)
+        {
+            try
+            {
+                var productos = mayor
+                    ? _productoService.GetProducto().OrderByDescending(p => p.Precio).ToList()
+                    : _productoService.GetProducto().OrderBy(p => p.Precio).ToList();
+
+                if (!productos.Any())
                 {
-                    return StatusCode(500, "Internal Server Error");
+                    return NotFound(new { message = "No se encontraron productos." });
                 }
+
+                return Ok(productos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", detalle = ex.Message });
             }
         }
     }

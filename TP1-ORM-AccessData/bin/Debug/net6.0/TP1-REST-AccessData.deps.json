@@ -489,7 +489,10 @@
           "TP1-REST-Domain": "1.0.0"
         },
         "runtime": {
-          "TP1-REST-Application.dll": {}
+          "TP1-REST-Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "TP1-REST-Domain/1.0.0": {
@@ -500,7 +503,10 @@
           "Swashbuckle.AspNetCore.Swagger": "6.4.0"
         },
         "runtime": {
-          "TP1-REST-Domain.dll": {}
+          "TP1-REST-Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
